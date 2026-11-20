@@ -9,16 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,900;1,9..144,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --sand: #f2e8db;
-    --sand-deep: #e7d9c6;
-    --ink: #22261f;
-    --green: #2c4438;
-    --green-soft: #47624f;
-    --clay: #c4603c;
-    --clay-deep: #a44c2d;
-    --cream: #fbf6ee;
-    --muted: #7c7263;
-    --line: rgba(34, 38, 31, 0.18);
+    --sand: #F0E9DE;
+    --sand-deep: #DCCFBC;
+    --ink: #24404A;
+    --green: #2E7C8E;
+    --green-soft: #4FA3B8;
+    --clay: #E97A6D;
+    --clay-deep: #D65B4B;
+    --cream: #FBF7F1;
+    --muted: #7C9299;
+    --line: rgba(36, 64, 74, 0.16);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -137,7 +137,8 @@
     font-family: 'Fraunces', serif;
     font-size: 1.7rem;
     font-weight: 600;
-    color: var(--clay);
+    color: #8AE4D0;
+    white-space: nowrap;
   }
 
   .stat p { font-size: 12px; color: rgba(251, 246, 238, 0.78); }
@@ -258,7 +259,7 @@
 
   input:focus, select:focus, textarea:focus {
     border-bottom-color: var(--clay);
-    background: rgba(196, 96, 60, 0.05);
+    background: rgba(233, 122, 109, 0.05);
   }
 
   /* Chips tipo casilla */
@@ -424,7 +425,7 @@
     border: 1px solid var(--clay-deep);
     color: var(--clay-deep);
     font-size: 11.5px;
-    background: rgba(196, 96, 60, 0.07);
+    background: rgba(233, 122, 109, 0.07);
   }
 
   .error-msg.show { display: block; }
@@ -498,8 +499,8 @@
       <p>llamadas de seguimiento post-adopción para acompañarte: 15 días, 3 y 6 meses.</p>
     </div>
     <div class="stat">
-      <span class="num">$0</span>
-      <p>esterilización gratuita en jornadas del IDPYBA. Te ayudamos a agendarla.</p>
+      <span class="num">100%</span>
+      <p>de nuestras adopciones incluyen compromiso escrito de esterilización. Es requisito, no opcional.</p>
     </div>
     <div class="stat">
       <span class="num">3-3-3</span>
@@ -659,12 +660,12 @@
         <div class="question-card">
           <span class="tag">Compromiso sanitario · Ley 1774 de 2016</span>
           <h3>Me comprometo a mantener al día la salud de la mascota</h3>
-          <span class="sub">Marca todo lo que aceptas. La vacuna antirrábica es obligatoria en Colombia; la esterilización tiene jornadas gratuitas en Bogotá (IDPYBA).</span>
+          <span class="sub">Marca todo lo que aceptas. La vacuna antirrábica es obligatoria en Colombia y la esterilización es requisito de esta adopción.</span>
           <div class="chips">
             <label class="chip"><input type="checkbox" name="compromiso_sanitario" value="Vacuna antirrábica anual"><span>Vacuna antirrábica anual</span></label>
             <label class="chip"><input type="checkbox" name="compromiso_sanitario" value="Vacuna polivalente/triple felina"><span>Polivalente / triple felina</span></label>
             <label class="chip"><input type="checkbox" name="compromiso_sanitario" value="Desparasitación"><span>Desparasitación periódica</span></label>
-            <label class="chip"><input type="checkbox" name="compromiso_sanitario" value="Esterilización"><span>Esterilización (gratuita IDPYBA)</span></label>
+            <label class="chip"><input type="checkbox" name="compromiso_sanitario" value="Esterilización"><span>Esterilización (compromiso obligatorio)</span></label>
             <label class="chip"><input type="checkbox" name="compromiso_sanitario" value="Microchip"><span>Microchip y cartilla zoosanitaria</span></label>
           </div>
         </div>
@@ -725,6 +726,10 @@
             <span>Acepto las llamadas o visitas de seguimiento a los 15 días, 3 meses y 6 meses, y a informar cambios de dirección o celular.</span>
           </label>
           <label class="agree">
+            <input type="checkbox" name="acuerdo" value="Compromiso de esterilización" required>
+            <span>Me comprometo a esterilizar a la mascota en la fecha acordada con la protectora y a enviar el certificado veterinario como comprobante.</span>
+          </label>
+          <label class="agree">
             <input type="checkbox" name="acuerdo" value="Habeas data - Ley 1581 de 2012" required>
             <span>Autorizo el tratamiento de mis datos personales conforme a la <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=46833" target="_blank" rel="noopener">Ley 1581 de 2012</a>, únicamente para gestionar esta adopción y su seguimiento.</span>
           </label>
@@ -766,8 +771,7 @@
         es parte del compromiso.
       </div>
 
-      <p>Si necesitas esterilización gratuita o vacuna antirrábica, te ayudamos a agendar
-      las jornadas del IDPYBA al momento de la entrega.</p>
+      <p>Recuerda: la esterilización es parte del compromiso de adopción. Te acompañamos para agendarla con tu veterinario.</p>
     </div>
 
   </div>
